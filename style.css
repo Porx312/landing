@@ -19,7 +19,97 @@ body{
     height: 100vh;
 }
 .section3{
-    background-color: rgb(255, 13, 0);
+    background-color: rgb(25, 25, 25);
     width: 100vw;
     height: 100vh;
 }
+
+
+/* section 3 porx */
+.container {  
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr 1.2fr 0.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "area1 area1 area4 area4 area2 area2 area2"
+      "area1 area1 area4 area4 area2 area2 area2"
+      "area1 area1 area4 area4 area2 area2 area2"
+      "area1 area1 area4 area4 area5 area5 area5"
+      "area1 area1 area4 area4 area5 area5 area5"
+      "area1 area1 area9 area9 area10 area10 area10"
+      "area1 area1 area9 area9 area10 area10 area10"
+      "area1 area1 area11 area11 area11 area12 area12";
+      gap: 10px;
+      padding: 10px;
+  }
+  .container div{
+    border-radius: 20px;
+    filter: grayscale(70);
+    transition: filter 0.50s ease-in-out;
+  }
+  .container div:hover{
+    filter: grayscale(0);
+  }
+  .area2 { grid-area: area2; 
+    background-image: url(gallery/123200.jpg);
+    background-position: center center;
+    object-fit: cover;
+
+}
+  
+  .area5 { 
+    
+    
+    grid-area: area5; 
+    background-image: url(gallery/228205.jpg);
+    background-position: center center;
+    object-fit: cover;}
+  
+  .area9 {
+    grid-area: area9;
+    background-image: url(gallery/231252.jpg);
+    background-position: center center;
+    object-fit: cover;
+    }
+  
+  .area10 {
+     grid-area: area10;
+     background-image: url(gallery/231254.jpg);
+     background-position: center center;
+     object-fit: cover;
+     }
+  
+  .area11 { 
+    grid-area: area11;
+    background-image: url(gallery/637345.jpg);
+    background-position: center center;
+    object-fit: cover; 
+}
+  
+  .area12 { 
+    grid-area: area12; 
+    background-image: url(gallery/637345.jpg);
+    background-position: center center;
+    object-fit: cover;
+}
+  
+  .area4 { 
+    grid-area: area4;
+    background-image: url(gallery/637345.jpg);
+    background-position: center center;
+    object-fit: cover;
+ }
+  
+  .area1 {
+     grid-area: area1; 
+     background-image: url(gallery/th.jpeg);
+     background-position: center center;
+     object-fit: cover;
+     background-size: 800px;
+    }
+  
