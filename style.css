@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -9,10 +12,167 @@ body{
 
 
 .section1{
-    background-color: aqua;
+    background: url(./galleryMike/gallery/fondo.png) no-repeat center;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container-header{
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 100px 200px 20px black;
+    animation-name: joinedHome;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes joinedHome {
+  0% {scale: 0.25;}
+  100% {scale: 1;}
+}
+
+header{
+    position: absolute;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.885);
+    opacity: .75;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+a img{
+    height: 25px;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  width: 130px;
+  font-size: 12px;
+}
+
+.container-home{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.textBox{
+  max-width: 450px;
+  color: white;
+  font-family: consolas;
+  margin-left: 100px;
+}
+
+.textBox h2{
+  font-size: 3em;
+}
+
+.textBox h3{
+  color: white;
+  font-family: consolas;
+  font-size: 2em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.textBox h3 span{
+  color: #17ef10;
+  text-shadow: 2px 2px 3px #108C0B;
+}
+
+.textBox p{
+  font-family: consolas;
+}
+
+.textBox a{
+  text-decoration: none;
+  color: #108C0B;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  background: #17ef10;
+  border-radius: 1px;
+}
+
+.imgBox{
+  display: flex;
+  width: 200px;
+  justify-content: flex-end;
+  padding-right: 25px;
+  margin-left: 80px;
+}
+
+.imgBox img{
+  max-width: 250px;
+  margin-bottom: 250px;
+  animation-name: prueba;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes prueba {
+  0%{scale: 1;}
+  50%{scale: 1.15;}
+  100%{scale: 1;}
+}
+
+#poster{
+  height: 550px;
+  width: 500px;
+  margin-top: 30px;
+  transition: box-shadow .1, transform .1;
+  background: url(./galleryMike/gallery/SeaOfThieves.png) no-repeat center;
+  background-size: cover;
+  margin-right: 80px;
+  
+}
+
+#poster:hover{
+  box-shadow: 0px 0px 50px #108C0B;
+}
+
+.circle{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #108C0B;
+  clip-path: circle(600px at right 800px);
+  z-index: -1;
+}
+
 .section2{
     background-color: rgb(83, 83, 84);
     width: 100vw;
