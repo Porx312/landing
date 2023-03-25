@@ -182,6 +182,146 @@ header ul li a{
 
 /*Mike Section End*/
 
+/* Jesus Section */
+.cont-login{
+  position: fixed;
+  background: linear-gradient(164deg, #107C10, #0000008C, #333);
+  box-shadow: 5px 0px 20px #FFFFFF;    
+  border-radius: 10px;
+  top: 15%;
+  left: 40%;
+  width: 25em;
+  height: 27.5em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: display .5s ease, height .2s ease;
+  z-index: 10;
+}
+.cont-login.active-popup{
+  display: flex;
+}
+.cont-login.active{
+  height: 32.5em;
+}
+.cont-login .form.login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+.cont-login.active .form.login{
+  transition: none;
+  transform: translateX(-25em);
+}
+.cont-login .form.register{
+  transform: translateX(25em);
+  transition: none;
+  position: absolute;
+}
+.cont-login.active .form.register{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+.cont-login .close-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.8em;
+  height: 2.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  
+}
+.form{
+  width: 100%;
+  padding: 2.5em;
+  border-radius: 10px;
+  color: #CCC;
+}
+
+.form h2{
+  font-size: 2em;
+  text-align: center;
+}
+.cont-input{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 1.8em 0;
+  border-bottom: 2px solid #ccc;
+}
+.cont-input label{
+  position: absolute;
+  font-size: 1em;
+  top: 50%;
+  left: 0.4em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: .5s;
+}
+.cont-input input:focus~label,
+.cont-input input:valid~label{
+  top: -5px;
+}
+.cont-input input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #CCC;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  padding: 0 2.1 0 .4em;
+}
+.cont-input .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  line-height: 3.5em;
+}
+.remember-forgot{
+  font-size: .9em;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.remember-forgot label input{
+  accent-color: #107C10;
+  margin-right: 10px;
+}
+.form a{
+  color: #40E0D0;
+  text-decoration: none;
+  font-weight: 600;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.btn{
+  font-size: .9em;
+  width: 100%;
+  height: 45px;
+  background-color: #107C10;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.register-login{
+  font-size: .9em;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+/* Jesus Section End */
+
 /*Joshua Section*/
 
 .section2{
