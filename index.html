@@ -1,80 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing</title>
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header id="section1">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./galleryMike/gallery/xboxicono.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <title>Xbox GamePass</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-    </header>
-    <section id="section2">
+        <div class="cont-login">
+            <span class="close-login"><img src="img_Login/x.png" alt=""></span>
 
-    </section>
-    <section id="carrusel">
-        <div class="container">
-            <div id="slide">
-                <div class="item" style="background-image: url(img/wide\ \(1\).png);">
-                    <div class="content">
-                        <div class="name">
-                            APEX LEGENDS™</div>
-                        <div class="des">
-                            ¡Apex Legends celebra su legado y brinda por su futuro en Apex Legends: Jolgorio! El nuevo modo Combate a muerte por equipos se une a los juegos y las clases de leyendas remasterizadas transforman la forma de jugar de nuestras leyendas.</div>
-                        <button>ver mas</button>
+            <div class="form login">
+                <form action="login.php" method="post">
+                    <h2>Login</h2>
+                    <div class="cont-input">
+                        <span class="icon"><img src="img_Login/mail.png" alt=""></span>
+                        <input type="text" name="username">
+                        <label for="username">Username/Email</label>
                     </div>
-                </div>
-                <div class="item" style="background-image: url(img/wide\ \(5\).png);">
-                    <div class="content">
-                        <div class="name">
-                            Xbox Game Pass</div>
-                        <div class="des">Juega a títulos nuevos el mismo día de su lanzamiento. Además, disfruta de cientos de juegos de alta calidad con amigos en tu consola, PC o la nube. Añadimos nuevos juegos constantemente, por lo que siempre habrá algo nuevo para disfrutar.</div>
-                        <button class="btn-main">ÚNETE AHORA POR 1 € </button>
+                    <div class="cont-input">
+                        <span class="icon"><img src="img_Login/lock.png" alt=""></span>
+                        <input type="password" name="password">
+                        <label for="password">Password</label>
                     </div>
-                </div>
-                <div class="item" style="background-image: url(img/wide\ \(2\).png);">
-                    <div class="content">
-                        <div class="name">Diablo® IV</div>
-                        <div class="des">Diablo® IV es un RPG de acción de última generación en el que tendrás que acabar con incontables males, dominar un sinfín de facultades, superar mazmorras de pesadilla y coleccionar botín legendario. Embárcate en la campaña por tu cuenta o con amigos en escenarios de siniestra belleza o explora un mundo compartido donde podrás encontrarte con otros jugadores para comerciar, luchar contra jefes del mundo o entrar en zonas JcJ para ponerte a prueba.
-                        </div>
-                        <button>ver mas</button>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" name="remember_me">Remember Me</label>
+                        <a href="#">Forgot your password?</a><br><br>
                     </div>
-                </div>
-                <div class="item" style="background-image: url(img/wide\ \(3\).png);">
-                    <div class="content">
-                        <div class="name">Hogwarts Legacy</div>
-                        <div class="des">Hogwarts Legacy es un RPG inmersivo de acción en mundo abierto. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico.</div>
-                        <button>ver mas</button>
+                    <input type="submit" value="Login" class="btn">
+                    <div class="register-login">
+                        <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
                     </div>
-                </div>
-                <div class="item" style="background-image: url(img/wide\ \(4\).png);">
-                    <div class="content">
-                        <div class="name">Call of Duty®: Modern Warfare® II</div>
-                        <div class="des">Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141.</div>
-                        <button>ver mas</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(img/wide\ \(7\).png);">
-                    <div class="content content-forza">
-                        <div class="name">Forza Horizon 5</div>
-                        <div class="des">Forza Horizon 5 para PC es un juego de simulación de carreras ambientado en varios lugares de México. Es el quinto juego de la serie Forza Horizon y el duodécimo juego principal de la franquicia general de Forza.
-                        </div>
-                        <button>ver mas</button>
-                    </div>
-                </div>
+                </form>
             </div>
-            <div class="buttons">
-                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+
+            <div class="form register" style="width: 320px;">
+                <form action="login.php" method="post">
+                    <h2>Register</h2>
+                    <div class="cont-input">
+                        <span class="icon"><img src="img_Login/login.png" alt=""></span>
+                        <input type="text" name="username">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="cont-input">
+                        <span class="icon"><img src="img_Login/mail.png" alt=""></span>
+                        <input type="mail" name="mail">
+                        <label for="username">Email</label>
+                    </div>
+                    <div class="cont-input">
+                        <span class="icon"><img src="img_Login/lock.png" alt=""></span>
+                        <input type="password" name="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" name="terms&conditions">I agree to the terms & conditions</label>
+                    </div>
+                    <input type="submit" value="Register" class="btn">
+                    <div class="register-login">
+                        <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
- <img 
- src="https://assets.xboxservices.com/assets/9d/bf/9dbfdd2f-ff81-4c9a-b423-0bd4a2aab298.jpg?n=04395294_Background-768_1083x1870_02.jpg">
- <script src="carousel.js"></script>
- <script src="script.js"></script>
-</body>
+
+        <section class="section1">
+
+                <div class="container-header">
+                    <header>
+                        
+                        <div class="Logo">
+                            <a href="https://www.microsoft.com/es-mx/" target="_blank"><img src="./galleryMike/gallery/MicrosoftLogo.png" alt="MicrosoftLogo.png"></a>
+                            <a href="https://www.xbox.com/es-MX" target="_blank"><img src="./galleryMike/gallery/XboxLogo.png" alt="XboxLogo.png"><img src="./galleryMike/gallery/Xbox.png" alt="Xboxtext.png"></a>
+                        </div>
+                        <ul>
+                            <li><a href="#">GamePass<span class="material-symbols-outlined">expand_more</span></a></li>
+                            <li><a href="#">Device<span class="material-symbols-outlined">expand_more</span></a></li>
+                            <li><a href="#">More<span class="material-symbols-outlined">expand_more</span></a></li>
+                            <li><a href="#" class="b-login"><span class="material-symbols-outlined">person_add</span>Login</a></li>
+                        </ul>
+                    </header>
+                    <div class="circle"></div>
+                    <div class="container-home">
+                        <div class="textBox">
+                            <h2>Xbox Game Pass</h2>
+                            <h3>Play the best games of the moment<br>like <span class="games"></span></h3>
+                            <p>Play new titles the same day they are released. 
+                                Plus, play hundreds of high-quality games with your friends on console, PC, or the cloud. 
+                                We add new games constantly, so there will always be something new to enjoy.</p><br>
+                            <a href="#">Join now for $1 ➔</a>
+                        </div>
+                        <div class="imgBox">
+                            <img src="./galleryMike/gallery/LogoGamePass.png" alt="GamePass.png">
+                        </div>
+                        <div id="poster"></div>
+                    </div>
+                </div>
+                
+
+        </section>
+
+        <section class="section2">
+
+
+        </section>
+
+        <section id="carrusel">
+            <div class="container">
+                <div id="slide">
+                    <div class="item" style="background-image: url(img/wide\ \(1\).png);">
+                        <div class="content">
+                            <div class="name">
+                                APEX LEGENDS™</div>
+                            <div class="des">
+                                ¡Apex Legends celebra su legado y brinda por su futuro en Apex Legends: Jolgorio! El nuevo modo Combate a muerte por equipos se une a los juegos y las clases de leyendas remasterizadas transforman la forma de jugar de nuestras leyendas.</div>
+                            <button>ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img/wide\ \(5\).png);">
+                        <div class="content">
+                            <div class="name">
+                                Xbox Game Pass</div>
+                            <div class="des">Juega a títulos nuevos el mismo día de su lanzamiento. Además, disfruta de cientos de juegos de alta calidad con amigos en tu consola, PC o la nube. Añadimos nuevos juegos constantemente, por lo que siempre habrá algo nuevo para disfrutar.</div>
+                            <button class="btn-main">ÚNETE AHORA POR 1 € </button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img/wide\ \(2\).png);">
+                        <div class="content">
+                            <div class="name">Diablo® IV</div>
+                            <div class="des">Diablo® IV es un RPG de acción de última generación en el que tendrás que acabar con incontables males, dominar un sinfín de facultades, superar mazmorras de pesadilla y coleccionar botín legendario. Embárcate en la campaña por tu cuenta o con amigos en escenarios de siniestra belleza o explora un mundo compartido donde podrás encontrarte con otros jugadores para comerciar, luchar contra jefes del mundo o entrar en zonas JcJ para ponerte a prueba.
+                            </div>
+                            <button>ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img/wide\ \(3\).png);">
+                        <div class="content">
+                            <div class="name">Hogwarts Legacy</div>
+                            <div class="des">Hogwarts Legacy es un RPG inmersivo de acción en mundo abierto. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico.</div>
+                            <button>ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img/wide\ \(4\).png);">
+                        <div class="content">
+                            <div class="name">Call of Duty®: Modern Warfare® II</div>
+                            <div class="des">Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141.</div>
+                            <button>ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img/wide\ \(7\).png);">
+                        <div class="content content-forza">
+                            <div class="name">Forza Horizon 5</div>
+                            <div class="des">Forza Horizon 5 para PC es un juego de simulación de carreras ambientado en varios lugares de México. Es el quinto juego de la serie Forza Horizon y el duodécimo juego principal de la franquicia general de Forza.
+                            </div>
+                            <button>ver mas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <script src="./script.js"></script>
+        <section id="section4"></section>
+        <script src="script.js"></script>
+    </body>
 </html>

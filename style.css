@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand&display=swap');
+
 :root{
     --Verde-Xbox: #107C10;
 --Negro-: #000000;
@@ -6,29 +9,47 @@
 --Blanco: #FFFFFF;
 }
 
-<<<<<<< HEAD
-::-webkit-scrollbar-thumb{
-  background-color: #107C10;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar{
-  background-color: #333333;
-}
-=======
->>>>>>> 0cb926baa64ef9dbf3db9daee6016192675ca5ff
-
 body{
     box-sizing: border-box;
     margin: 0;
     width: 100%;
     padding: 0;
-    overflow-x: hidden;
 }
 
-#section1{
+/*Mike Section*/
+
+.section1{
+    background: url(./galleryMike/gallery/fondo.png) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header{
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 100px 200px 20px black;
+    animation-name: joinedHome;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes joinedHome {
+  0% {scale: 0.25;}
+  100% {scale: 1;}
+}
+
+header{
+    position: absolute;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 10%;
     width: 100%;
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,28 +182,25 @@ header ul li a{
 
 /*Mike Section End*/
 
-<<<<<<< Updated upstream
-=======
 /* Jesus Section */
   .cont-login{
     position: fixed;
     background: linear-gradient(164deg, #107C10, #000000, #333);
-    box-shadow: 0px 0px 20px #FFFFFF;    
+    box-shadow: 5px 0px 20px #FFFFFF;    
     border-radius: 10px;
     top: 14%;
     left: 68%;
     width: 25em;
     height: 27.5em;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    transform: scale(0);
     overflow: hidden;
-    transition: transform .5s ease, height .2s ease;
+    transition: display .5s ease, height .2s ease;
     z-index: 10;
   }
   .cont-login.active-popup{
-    transform: scale(1);
+    display: flex;
   }
   .cont-login.active{
     height: 32.5em;
@@ -304,29 +322,16 @@ header ul li a{
 
 /* Jesus Section End */
 
->>>>>>> Stashed changes
 /*Joshua Section*/
 
 .section2{
     background-color: rgb(83, 83, 84);
     width: 100vw;
-=======
->>>>>>> 0cb926baa64ef9dbf3db9daee6016192675ca5ff
     height: 100vh;
-    background-color: var(--Negro-);
 }
 
-#section2{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--Gris-oscuro);
-}
+/*Joshua Section End*/
 
-#section4{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--Negro-);
-}
 /* porx seccion */
 
 #carrusel{
@@ -347,7 +352,7 @@ overflow: hidden;
     top:50%;
     transform: translate(-50%,-50%);
     width:100vw;
-    height:400px;
+    height:100vh;
     padding:50px;
     box-shadow: 0 30px 50px var(--Negro-);
     
@@ -452,7 +457,7 @@ overflow: hidden;
 }
 .buttons{
     position: absolute;
-    bottom:30px;
+    bottom:182px;
     z-index: 222222;
     text-align: center;
     width:100%;

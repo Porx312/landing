@@ -60,3 +60,24 @@ document.getElementById('prev').onclick = function(){
     document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
 
+//Login
+const contLogin = document.querySelector('.cont-login');
+const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.login-link');
+const openLogin = document.querySelector('.b-login');
+const closeLogin = document.querySelector('.close-login');
+
+registerLink.addEventListener('click', ()=>{
+    contLogin.classList.add('active');
+})
+
+loginLink.addEventListener('click', ()=>{
+    contLogin.classList.remove('active');
+})
+
+openLogin.addEventListener('click', ()=>{
+    contLogin.classList.add('active-popup');
+})
+closeLogin.addEventListener('click', ()=>{
+    contLogin.classList.remove('active-popup');
+})
